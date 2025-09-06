@@ -1,0 +1,35 @@
+# Core Python libraries
+numpy
+pandas
+requests
+python-dotenv
+
+# Financial data
+yfinance
+
+# Web scraping
+beautifulsoup4
+
+# Text analysis
+textblob
+
+# Retry logic
+tenacity
+
+# Plotting and visualization
+matplotlib
+plotly
+streamlit
+
+# Machine Learning
+scikit-learn
+torch
+torchvision
+
+# Google & LangGraph
+google-generativeai
+google-adk
+langgraph
+
+# Search
+tavily
