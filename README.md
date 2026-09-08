@@ -2,13 +2,13 @@
 
 # AlphaForge
 
-**Modular Multi-Agent AI Research & Trading Workflow**
+### Modular Multi-Agent AI Research & Trading Workflow
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Hackathon](https://img.shields.io/badge/Google-ADK_Hackathon-red.svg)](https://devpost.com)
 
-AlphaForge is a sophisticated multi-agent orchestration system designed for the **Google Agent Development Kit Hackathon**. It leverages the [Agent Development Kit](https://github.com/google/adk-python) and Google Cloud to transform raw market data into explainable, automated financial decisions through a "Council of Agents" approach.
+AlphaForge is a sophisticated multi-agent orchestration system designed for the Google Agent Development Kit Hackathon. It leverages the Agent Development Kit and Google Cloud to transform raw market data into explainable, automated financial decisions through a "Council of Agents" approach.
 
 ---
 
@@ -16,11 +16,11 @@ AlphaForge is a sophisticated multi-agent orchestration system designed for the 
 
 | Agent Type | Functionality |
 | :--- | :--- |
-| **Parallel Analysts** | Simultaneous Technical, Sentiment, News, and Fundamental data processing. |
-| **Debate Engine** | LangGraph-powered simulation between **Bullish** and **Bearish** researchers. |
-| **Risk Synthesis** | Tri-layer debate (Aggressive, Neutral, Safe) to determine optimal capital exposure. |
-| **The Trader** | Final actionable decision-making (BUY/HOLD/SELL) based on synthesized logic. |
-| **Reflection Layer** | Self-correcting feedback loop that audits decisions for hallucinations or errors. |
+| Parallel Analysts | Simultaneous Technical, Sentiment, News, and Fundamental data processing. |
+| Debate Engine | LangGraph-powered simulation between Bullish and Bearish researchers. |
+| Risk Synthesis | Tri-layer debate (Aggressive, Neutral, Safe) to determine optimal capital exposure. |
+| The Trader | Final actionable decision-making (BUY/HOLD/SELL) based on synthesized logic. |
+| Reflection Layer | Self-correcting feedback loop that audits decisions for hallucinations or errors. |
 
 ---
 
@@ -28,7 +28,7 @@ AlphaForge is a sophisticated multi-agent orchestration system designed for the 
 
 ```mermaid
 flowchart TD
-    A[<b>Start:</b> Input Ticker] --> B{Parallel Analysts}
+    A[Start: Input Ticker] --> B{Parallel Analysts}
     
     subgraph Analysts
     B --> B1[Technical]
@@ -46,7 +46,7 @@ flowchart TD
     
     G --> H{Reflection Agent}
     H -- Hallucination Detected --> G
-    H -- Verified --> I[<b>Final Output:</b> Actionable Plan]
+    H -- Verified --> I[Final Output: Actionable Plan]
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style I fill:#00ff00,stroke:#333,stroke-width:2px
@@ -69,11 +69,10 @@ pip install -r requirements.txt
 ```
 
 ### 3. Configuration
-Create a `.env` file in the root directory and add your credentials:
+Create a .env file in the root directory and add your credentials:
 ```env
 GOOGLE_CLOUD_PROJECT="your-project-id"
 ADK_API_KEY="your-api-key"
-# Add other necessary API keys
 ```
 
 ---
@@ -114,16 +113,15 @@ AlphaForge/
 ---
 
 ## Customization
-* **New Analysts:** Easily plug in new data sources in the `Analysts/` directory.
-* **Logic Tuning:** Modify the `Risk_Management` debate prompts to fit your specific trading profile.
-* **Scaling:** Designed for easy deployment to **Google Cloud Run** or **App Engine**.
+- New Analysts: Easily plug in new data sources in the Agents/ directory.
+- Logic Tuning: Modify the Risk_Management debate prompts to fit your profile.
+- Scaling: Designed for easy deployment to Google Cloud Run or App Engine.
 
 ---
 
 ## License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ for the Google Agent Development Kit Hackathon.**  
-*Modular, explainable, and robust AI for the future of finance.*
+**Built for the Google Agent Development Kit Hackathon.**
